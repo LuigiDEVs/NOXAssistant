@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOX Assistant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="navbar-brand">NOX</div>
+            <div class="navbar-links">
+                <a href="#" class="active">Home</a>
+                <a href="#faq-section">FAQ</a>
+                <a href="#team-section">Team</a>
+            </div>
+            <div class="social-links">
+                <a href="https://twitter.com" target="_blank" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://t.me" target="_blank" class="social-link">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="https://github.com" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div id="app">
+        <div id="main-content">
+            <div id="avatar-container">
+                <div class="sound-wave">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <img src="https://i.ibb.co/6XPSm2v/n.jpg" alt="NOX" class="avatar-image">
+            </div>
+            <div id="controls">
+                <button id="start-btn">Start</button>
+                <button id="stop-btn">Stop</button>
+            </div>
+            <div id="response">
+                <div id="conversation"></div>
+                <h2 class="logs-title">LOGS NOX</h2>
+                <div class="coming-soon">Launching soon</div>
+                <div id="logs"></div>
+            </div>
+            
+            <section id="faq-section">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What is NOX Assistant?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>NOX is an advanced AI assistant powered by cutting-edge language models and speech recognition technology. It's designed to help you with various tasks through natural conversation.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How do I start using NOX?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Simply click the "Start" button and begin speaking. NOX will listen to your voice commands and respond accordingly. Make sure to allow microphone access when prompted.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What can NOX help me with?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>NOX can assist with a wide range of tasks including answering questions, providing information, helping with calculations, and engaging in natural conversations on various topics.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Is my data secure with NOX?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we take privacy seriously. All conversations are encrypted, and we don't store any personal data without your explicit consent. Your security is our top priority.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="team-section">
+                <h2 class="team-title">Our Team</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-avatar">
+                            <img src="https://i.ibb.co/6XPSm2v/n.jpg" alt="LuigiDEV">
+                        </div>
+                        <h3 class="member-name">LuigiDEV</h3>
+                        <p class="member-role">Founder & CEO</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About NOX</h3>
+                <p>NOX is an advanced AI assistant designed to help you with various tasks through natural conversation.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#faq-section">FAQ</a></li>
+                    <li><a href="#team-section">Team</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="footer-social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 NOX Assistant. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="module" src="/js/main.js"></script>
+</body>
+</html>
